@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Le CSS</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        p{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        Il existe 3 façons d'intégrer du CSS dans le HTML
+        (de la moins bonne à la meilleure méthode)
+        - Attribut Style des balise 
+        - Balise style dans le head
+        - un fichier externe en .css
+    -->
+    <h1 style="color:blue">Mon titre est en bleu</h1>
+
+    <p id="p1">Ce paragraphe et centré et rouge</p>
+    <!--Un id et unique alors que la classe on peut en avoir une ou plusieur
+    pour une balise et utilisable plusieur fois-->
+    <p class="red majuscule">Ce paragrape et vert</p>
+    <p id="p2">
+        On va mettre un texte ce <span class="maj">mot</span> en majuscule
+        Il faudra un <span class="gras bleu">mot</span> en gras et en bleu 
+        il y auras aussi un <span class="rouge">span</span> en rouge
+    </p>
+
+    <h2 class="green other">un titre</h2>
+    <p class="green other"> Un paragraphe</p>
+    <p class="green ">Un autre paragraphe</p>
+    <p class="other">Pas en gras</p>
+</body>
+</html>

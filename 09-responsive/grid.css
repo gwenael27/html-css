@@ -1,0 +1,50 @@
+h1{
+    font-size: 2em;
+}
+
+.mobile{
+    display: none;
+}
+
+.flex{
+    display: flex;
+}
+.flex > div {
+    width: 50%;
+    background-color: blue;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex > div > div {
+    background-color: red;
+    width: 30%;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+@media(max-width:992px){
+    .flex > div > div {
+        width: 90%;
+    }
+}
+
+
+@media (max-width:768px){
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+
+    .flex > div{
+        width: 100%;
+    }
+
+    main{
+        flex-wrap: wrap;
+    }
+}

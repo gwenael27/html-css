@@ -1,0 +1,105 @@
+body{
+    background-color: #c8c8c8;
+    margin: 0;
+}
+
+.container{
+    width: 1000px;
+    margin:auto;
+}
+
+header{
+    background-image: linear-gradient(180deg, #fff, #ff8100);
+    margin: 0 0 15px 0; /*  marge externe haut, droite , bas , gauche */
+    padding:40px 0; /* marge interne haut / bas et gauche / droite */
+    border: 3px solid #000000;
+    text-align: center;
+}
+
+nav {
+    background-color: #00ffff;
+    background-image: linear-gradient(180deg,#fff, #00ffff );
+    border:3px solid #000;
+    margin-top: 15px ;
+    padding:10px;
+    margin-bottom: 15px;
+}
+  nav li{ /* prend que les li dans la balise Nav */
+     display: inline;
+ }
+
+ nav ul{
+     text-align: center;
+     margin: 0;
+     padding: 0;
+ }
+
+ nav span{
+     float: left;
+ }
+
+ section{
+     border:3px solid #000 ;
+     width: 659px; /* 700px - 3px - 3px - 15px - 10 -10*/
+     float:left;
+     margin-right: 15px;
+     padding: 10px;
+
+ }
+
+
+  section h2{
+     margin: 0;
+     /* taille de la police*/
+     font-size: 16px;
+     /* Epaisseur de la police */
+     font-weight: normal;
+ }
+
+ section article{
+     background-color: #8db1e3;
+     border: 3px solid #000;
+     height: 150px;
+ }
+
+ .flex {
+     display: flex;
+ }
+
+ .flex article {
+     width: 700px;
+     margin-right: 15px;
+ }
+ .flex aside{
+      width: 300px;
+ }
+
+ section aside, #main-aside {
+    border: 3px solid #000;
+    background-color: #d6a39c;
+    height: 150px ;
+ }
+
+ #article-1{
+     margin-bottom: 15px;
+ }
+
+ /* Le float permet de disposer des élements côte à côte. 
+    Le felx est plus moderne et plus simple*/
+
+ #main-aside {
+     width: 294px; /* 300px - 3px -3px*/
+     float: left;
+     height: 365px;
+ }
+
+ footer{
+     background-color: #d3d4ac;
+     border: 3px solid #000;
+     margin-top: 15px;
+     text-align: center;
+     padding: 15px 0;
+ }
+ .clear{
+     clear: left;
+ }

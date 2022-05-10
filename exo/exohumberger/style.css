@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: orange;
+    height: 5000px;
+}
+
+header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    z-index: 1;
+    
+}
+#burger-click{
+    display: none;
+}
+
+.burger-menu{
+    position: fixed;
+    /* background-color: rgba(255, 2555, 255, 0.9); */
+    width: 100%;
+    background-color: red;
+    height: 100%;
+    z-index: 1;
+    transform: translateX(100%);
+    transition: 0.5s;
+}
+
+#burger-click:checked + .burger-menu{
+    transform: translateX(20%);
+}
+
+.burger-menu ul{
+    padding-top: 100px;
+}
+
+h2{
+    display: flex;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+.burger{
+    height: 90px;
+    z-index: 1;
+}
+
+#burger-click:checked ~ header span{
+    transform: rotate(405deg);
+    position: relative;
+}
+
+#burger-click:checked ~ header span:first-child{
+transform: rotate(45deg);
+top: 10px;
+}
+
+#burger-click:checked ~ header span:nth-last-child(2){
+    opacity: 0;
+}
+
+#burger-click:checked ~ header span:last-child{
+  transform: rotate(-45deg);
+  top: -10px;
+}
+        
+
+.burger span{
+    display: block;
+    width: 32px;
+    height: 4px;
+    margin-bottom: 6px;
+    background-color: white;
+    transition: 0.5s;
+}

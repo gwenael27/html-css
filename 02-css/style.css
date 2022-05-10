@@ -1,0 +1,75 @@
+body{
+    background-color: lightgray;
+}
+
+/* 
+On a des sélecteur en CSS 
+- Par balise (p, h2)
+- Par classe (.majuscule)
+- Par id (#p1)
+*/
+
+.red{
+    /* different moyen d'utilister les colour avec css*/
+    background-color: red;
+    background-color: #ffaaf5;
+    background-color: rgba(14, 160, 14, 0.5);
+}
+
+#p1{
+    color: red;
+}
+
+.majuscule {
+    text-transform: uppercase;
+}
+
+#p2{
+    background-color: orange;
+}
+.maj{
+    text-transform: uppercase;
+}
+
+.gras {
+    font-weight: bold;
+}
+.bleu{
+    color: blue;
+}
+.rouge{
+    color: red;
+}
+
+/* prend le dernier span des frere */
+span:last-child {
+    color: red;
+}
+/* prend le span selectioner */
+span:nth-child(3){
+color: red;
+}
+/* prend le dernier span de la page  */
+span:last-of-type {
+    color: red;
+}
+
+.green{ /* h2 et tous les p */
+color: green;
+}
+
+/* tous les éléments avec green ET other */
+.green.other{
+    font-weight: bold;
+
+}
+
+/* tous les h2 avec green ET other */
+h2.green.other {
+    font-size: 30px; ;
+}
+
+/*Tous les éléments avec green OU other */
+.green, .other{
+    font-style: italic;
+}

@@ -1,0 +1,30 @@
+.flex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.flex div{
+    background-color: red;
+    width: 30%;
+    height: 50px;
+    margin-bottom:10px ;
+}
+
+/* Tabettes */
+/* 769px a 992px*/
+
+@media (min-width:769px) and (max-width:992px){
+    .flex div {
+        width: 45%;
+        background-color: blue;
+    }
+}
+
+/* Smartphones*/
+/* De 0 a 768px inclus*/
+@media (max-width:768px){
+    .flex div{
+        width: 100%;
+    }
+}

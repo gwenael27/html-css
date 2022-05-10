@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title> Ma première page HTML </title>
+    </head>
+    <body>
+
+        <div id="top"></div>
+        <!-- titre de niveau 1 -->
+
+        <h1>Hello world! </h1>
+        <h2> Un sous-titre</h2>
+
+        <!-- L'indentation est trés importente 
+        Alt + tabulation + p pour tout réindenter
+        Shift + Tab our indenter plusieur ligne ou Tabullation -tab -->
+
+        <!-- lorem met du text latin pour combler un troue-->
+        <P> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quod corporis in rem asperiores perferendis repudiandae, nostrum praesentium, distinctio accusantium dicta dolorem excepturi cumque cupiditate totam ut nisi labore tempora!
+        </P>
+        <p>
+            Un &nbsp;&nbsp;&nbsp; texte qui <br />
+            passe à la linge  
+        </p>
+        <hr>
+            <!-- Pour les images, on doit définir un chemin -->
+            <!-- le chemin peut etre absolu: https://site.com/image.jpg -->
+            <!-- Le chemin peut etre relatif : image.jpg -->
+
+        <img src="image.jpg" width="200" alt="lewis hamilton"> 
+
+        <!-- On peut afficher des listes-->
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>
+            <ol>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ol>
+        </li>
+        </ul>
+
+        <ol>
+            <li>
+                <span>Chien</span>
+                        <ul>
+                            <li>Jack Russel</li>
+                            <li>Doberman</li>
+                            <li>Husky</li>
+                        </ul>
+            </li>
+            <li>
+                <span>Chat</span>
+                        <ul>
+                            <li>Gouttière</li>
+                            <li>Européen</li>
+                            <li>Person</li>
+                        </ul>
+            </li>
+            <li>
+                <span>Oiseau</span>
+                        <ul>
+                            <li>pigeon</li>
+                            <li>Perroquet</li>
+                            <li>Roucoups</li>
+                        </ul>
+            </li>
+        </ol>
+
+        <p>
+
+            <strong>En gras</strong> 
+            <em>en italique</em> 
+            <s>un texte barré </s>
+            <mark>test</mark>
+            <u>Souligné</u>
+        </p>
+        <!-- Les liens en html-->
+        <!-- Le liens relatif-->
+        <a href="index.html">Accueil</a>
+        <!-- Le lien absolu (externe)-->
+        <a href="https://google.fr" target="_blank">Google</a>
+        <!-- scroll tout en haut ou bas-->
+        <a href="#top">retour en haut de la page</a>
+
+        <!-- On peut faire des tableaux pour lister des données-->
+        <table border="1px" cellspacing="0" cellpadding="20px">
+             <!-- plus faire de deco dans le html-->
+            <thead> 
+                <tr> <!-- ligne -->
+                    <th>Nom </th>
+                    <th> Année de sortie</th> 
+                    <th>Acteur </th><!-- colonne -->
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Spider-man: Far from home </td>
+                    <td align="center">2019</td>
+                    <td>Tom holland,Zendaya</td>
+                </tr>
+
+            <tr>
+                <td>The Batman</td>
+                <td align="center" colspan="2">2022</td>
+            </tr>
+
+            </tbody>
+            <caption align="bottom"> Mes films</caption>
+
+        </table>
+
+        <br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+    </body>
+</html>

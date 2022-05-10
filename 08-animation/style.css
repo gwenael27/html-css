@@ -1,0 +1,106 @@
+body{
+    background-image: url(../08-animation/galaxy.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+audio{
+    display: none;
+}
+
+.long-time-ago{
+    color: #4bd5ee;
+    display: flex;
+    font-size: 32px;
+    font-family: 'Libre Franklin', sans-serif;
+    animation-name: long-time-ago;
+    animation-delay: 1s ;
+    animation-duration: 3s;
+    opacity: 0;
+    
+
+}
+
+@keyframes long-time-ago {
+    0%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.logo{
+    width: 623px;
+    height: 400px;
+    display: flex;
+    position: absolute;
+    background-image: url(../08-animation/STL.png.png);
+    animation-name:logo;
+    animation-delay: 3s ;
+    animation-duration: 10s;
+    opacity: 0;
+}
+
+@keyframes logo{
+    0%{
+        transform: scale(100);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(0);
+        opacity: 1;
+    }
+}
+.crawl{
+    font-size: 64px;
+    color: yellow;
+    font-family: 'Libre Franklin', sans-serif;
+    width: 800px;
+    height: 3200px;
+    position: absolute;
+    bottom: 0;
+    transform:  perspective(300px) rotateX(25deg);
+    transform-origin: center bottom;
+
+}
+
+.text{
+    position: absolute;
+    animation-name:anim;
+    animation-duration: 44s;
+    animation-delay: 12s;
+    top: 100%;
+}
+
+@keyframes anim{
+    0%{
+        top: 100%;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        top: 0%;
+        opacity: 0;
+    }
+}
+/* 
+.h3{
+    display: flex;
+    justify-content: center;
+} */
+
+h3{
+    text-align: center;
+    font-family: 'Libre Franklin', sans-serif;
+}

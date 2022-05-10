@@ -1,0 +1,55 @@
+/* Partie jaune de la page Logo et menu */
+nav{
+    background-color: yellow;
+    display: flex;
+}
+/* logo avec marge de droite a 630px */
+.flexlogo{
+  margin-right: 630px; 
+}
+/* ecriture menu */
+.flexlogo h2{
+    margin-left: 20px;
+}
+/* grande div qui permer de center le contenue de la page*/
+.container{
+    width: 1000px;
+    margin: auto;
+}
+
+/* sidebar coter rouge de la page a coter de la div bleu */
+#sidebar{
+    background-color: red;
+    display: flex;
+    width: 300px;
+}
+
+/* grand div contien la div bleu et rouge  */
+.grandiv{
+ display: flex;
+
+}
+/* Corps contient tout les carre rose qui sont dans la class grandiv */
+.corps{
+    background-color: blue; 
+    width: 700px;
+    display: flex;
+    flex-wrap: wrap;  /* permet le retrour a la ligne des div rose*/
+    justify-content: center; /* permet de center les carre*/
+}
+
+/* tous le div dans la div crops auront les proprieter du css desous */
+.corps div {
+    background-color: pink;
+    margin: 15px;
+    width: 200px;
+    height: 200px;
+}
+
+/* bonnus avec seb si je suprime la case 9 au lieu de saligner au centre 
+il reste coller a gauche elle transfomre */
+ /*.corps div:last-of-type {
+    background-color: transparent;
+  }
+  */
+  
